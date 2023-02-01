@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 3,
+  "name": "WH-Erscheinungsdatum",
+  "version": "0.1",
+
+  "description": "Adds the publish date for willhaben articles.",
+
+  "icons": {
+    "32": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.willhaben.at/*"],
+      "js": ["wh-erscheinungsdatum.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
+
